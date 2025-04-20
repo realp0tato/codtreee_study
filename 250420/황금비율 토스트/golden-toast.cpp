@@ -8,14 +8,15 @@ int n, m;
 string s;
 
 int main() {
-    list<char> l;
-    list<char>::iterator it;
+    
+    
 
     cin >> n >> m;
     cin >> s;
+    list<char> l;
     for(int i =0; i<n; i++)
         l.push_back(s[i]);
-    
+    list<char>::iterator it;
     it = l.end();
     for (int i = 0; i < m; i++) {
         char command;
@@ -31,7 +32,7 @@ int main() {
         else if(command == 'R' && it != l.end())
             it++;
         else if(command == 'D' && it != l.end())
-            l.erase(it);
+            it = l.erase(it);
     }
 
     for(it = l.begin(); it != l.end(); it++)
