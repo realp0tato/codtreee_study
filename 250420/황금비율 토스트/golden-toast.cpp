@@ -6,10 +6,11 @@ using namespace std;
 
 int n, m;
 string s;
-list<char> l;
-list<char>::iterator it;
 
 int main() {
+    list<char> l;
+    list<char>::iterator it;
+
     cin >> n >> m;
     cin >> s;
     for(int i =0; i<n; i++)
