@@ -21,19 +21,23 @@ int main() {
             else
                 l.push_back(A[i]);
         }
-        if(command[i] == "pop_front")
+        else if(command[i] == "pop_front")
+        {
             cout << l.front() << endl;
             l.pop_front();
-        if(command[i] == "pop_back")
+        }
+        else if(command[i] == "pop_back")
+        {
             cout << l.back() << endl;
             l.pop_back();
-        if(command[i] == "size")
+        }
+        else if(command[i] == "size")
             cout << l.size() << endl;
-        if(command[i] == "empty")
+        else if(command[i] == "empty")
             cout << l.empty() << endl;
-        if(command[i] == "front")
+        else if(command[i] == "front")
             cout << l.front() << endl;
-        if(command[i] == "back")
+        else if(command[i] == "back")
             cout << l.back() << endl;
     }
 
